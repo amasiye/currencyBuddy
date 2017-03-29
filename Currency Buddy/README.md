@@ -1,14 +1,18 @@
-# A Blank PhoneGap App
+# A Simple Foreign Exchange App
 
-## Usage
+## About
 
-### PhoneGap CLI
+### About Currency Buddy
 
-    $ phonegap create my-app --template blank
+    Currency Buddy is the brain child of Andrew Masiye. Having grown tired
+    frustrated with constantly having to open a browser every time he needed to
+    convert between.
 
-### Desktop
+### Who Are We
 
-In your browser, open the file:
+Andrew Masiye is a software developer who currently resides in Nova Scotia,
+Canada. He is the founder and CEO of AtatuSoft Software Development company.
+For more info follow the links below:
 
-    /www/index.html
-
+    http://nothingbuthis.tk
+    http://atatusoft.ml
