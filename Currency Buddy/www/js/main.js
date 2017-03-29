@@ -4,7 +4,7 @@ var APP_ID = 'bd929bae610d45e8a67ba30a71baa00b';
 var ep;
 var currencies;
 
-$(document).on('deviceready', function() {
+$(document).on('ready', function() {
   // alert(ep.currencies);
   init();
 });
