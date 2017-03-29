@@ -55,14 +55,14 @@
 		<h4>About the Developer</h4>
 		<p>Andrew Masiye is Computer Scientist with a passion for Game Development
 		   and Web Development.</p>
-		<p>Dev Blog: <a href="http://currencybuddy.ml/blog/">http://currencybuddy.ml/blog/</a></p>
+		<p>Dev Blog: <a href="http://currencybuddy.ml/blog/" target="_blank">http://currencybuddy.ml/blog/</a></p>
 	  </div>
 
 	  <div data-role="collapsible">
 		<h4>Credits</h4>
 		<h4>APIs</h4>
 		<p>Exchange Rate Data provided by:
-		  <a href="https://openexchangerates.org/">Open Exchange Rates</a>
+		  <a href="https://openexchangerates.org/" target="_blank">Open Exchange Rates</a>
 		</p>
 		<h4>Developer</h4>
 		<p>Lead Developer: Andrew Masiye.</p>
@@ -92,14 +92,13 @@
 
     <!-- Footer -->
     <div data-role="footer">
-      <h1>Developed by <a href="http://atatusoft.ml">AtatuSoft</a></h1>
-      <h4 id="copy">&copy;{{@year}}</h4>
+      <h3 id="copy">&copy;&nbsp;{{@year}}&nbsp;CurrencyBuddy</h3>
     </div>
 	<script>
 		var d = new Date();
 		var y = d.getFullYear();
 		$(document).ready(function() {
-			$("#copy").html("&copy;&nbsp;" + y);
+			$("#copy").html("&copy;&nbsp;" + y + "CurrencyBuddy");
 		});
 
 	</script>

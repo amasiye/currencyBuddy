@@ -100,7 +100,7 @@ function swapValues()
   // Update options views
   $('#from').change();
   $('#to').change();
-}
+} 
 
 function Endpoint()
 {
