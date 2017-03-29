@@ -1,20 +1,34 @@
 // main.js
 
 var APP_ID = 'bd929bae610d45e8a67ba30a71baa00b';
-var ep = new Endpoint();
+var ep;
 var currencies;
 
 $(document).ready(function() {
-  $(document).ajaxError(function( event, jqxhr, settings, thrownError) {
-    alert(thrownError);
-  });
+  ep = new Endpoint();
+  alert(ep.currencies);
+  init();
+});
 
+// Currency Swapping
+document.getElementById("swapValues").addEventListener("click", function(event) {
+  event.preventDefault();
+
+  swapValues();
+});
+
+// Conversion
+$("#convert").on("click", function(event) {
+  event.preventDefault();
+  convert();
+});
+
+function init()
+{
   $.get(
         ep.currencies,
         {app_id : APP_ID},
         function(data) {
-          alert(data);
-
           for(country in data)
           {
             // Build "From" option list
@@ -45,26 +59,12 @@ $(document).ready(function() {
               $("#ui-result").text(country + " ");
             }
           }
-
         });
 
   $('#to').on('change', function(e) {
     $('#ui-result').text($(this).find('option:selected').val());
   });
-});
-
-// Currency Swapping
-document.getElementById("swapValues").addEventListener("click", function(event) {
-  event.preventDefault();
-
-  swapValues();
-});
-
-// Conversion
-$("#convert").on("click", function(event) {
-  event.preventDefault();
-  convert();
-});
+} // end init()
 
 function convert()
 {
