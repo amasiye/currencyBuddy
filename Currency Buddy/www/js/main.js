@@ -5,6 +5,7 @@ var ep = new Endpoint();
 var currencies;
 
 $("document").ready(function() {
+  alert(APP_ID);
   $.get(
         ep.currencies,
         {app_id : APP_ID},
@@ -100,7 +101,7 @@ function swapValues()
   // Update options views
   $('#from').change();
   $('#to').change();
-} 
+}
 
 function Endpoint()
 {

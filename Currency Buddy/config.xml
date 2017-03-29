@@ -8,5 +8,6 @@
         AtatuSoft Team
     </author>
     <content src="index.html" />
+    <icon src="res/ios/icon.png" platform="ios" width="57" height="57" density="mdpi" />
     <access origin="*" />
 </widget>
