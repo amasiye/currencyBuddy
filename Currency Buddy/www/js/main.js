@@ -22,7 +22,7 @@ $("#convert").on("click", function(e) {
 });
 
 function init()
-{dataType
+{
   ep = new Endpoint();
   $("#from").append("<option value='CAD'>Canada</option>").find('option[value=CAD]').prop('selected', true).change();
   $("#to").append("<option value='ZMW'>Zambia</option>").find('option[value=ZMW]').prop('selected', true).change();
