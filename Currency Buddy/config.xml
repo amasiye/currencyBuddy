@@ -12,6 +12,13 @@
         AtatuSoft Team
     </author>
     <content src="index.html" />
-    <icon src="res/ios/icon.png" platform="ios" width="57" height="57" density="mdpi" />
+    <icon src="res/android/icon.png" platform="ios" width="57" height="57" density="mdpi" />
     <access origin="*" />
+    <allow-navigation href="https://openexchangerates.org/*" />
+    <!-- Allow links to web pages to open in a browser -->
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <!-- Allow images, xhrs, etc. to google.com -->
+    <access origin="http://openexchangerates.org/*" />
+    <access origin="https://openexchangerates.org/*" />
 </widget>

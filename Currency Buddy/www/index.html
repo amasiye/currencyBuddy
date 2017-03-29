@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Currency Buddy</title>
+  <title>CurrencyBuddy</title>
 
   <!--Adjusting the page on mobile screen  -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
@@ -31,7 +31,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
   <link rel="stylesheet" href="css/styles.css">
-<!-- 981x486 -->
+
   <!-- JavaScript -->
   <script src="js/jquery-1.11.3.min.js"></script>
   <script src="js/jquery.mobile-1.4.5.min.js"></script>
@@ -69,6 +69,18 @@
 		<p>Lead Developer: Andrew Masiye.</p>
 	  </div>
 
+    <!-- Footer -->
+    <div data-role="footer">
+      <h3 id="copy">&copy;&nbsp;{{@year}}&nbsp;CurrencyBuddy</h3>
+    </div>
+  	<script>
+  		var d = new Date();
+  		var y = d.getFullYear();
+  		$(document).ready(function() {
+  			$("#copy").html("&copy;&nbsp;" + y + "&nbsp;CurrencyBuddy");
+  		});
+
+  	</script>
 	</div>
 
     <!-- Main Content -->
@@ -89,19 +101,6 @@
       <div id="ui-result"></div>
 
     </div>
-
-    <!-- Footer -->
-    <div data-role="footer">
-      <h3 id="copy">&copy;&nbsp;{{@year}}&nbsp;CurrencyBuddy</h3>
-    </div>
-	<script>
-		var d = new Date();
-		var y = d.getFullYear();
-		$(document).ready(function() {
-			$("#copy").html("&copy;&nbsp;" + y + "&nbsp;CurrencyBuddy");
-		});
-
-	</script>
   </div>
 
 </body>

@@ -9,6 +9,12 @@
     "installed_plugins": {
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.atatusoft.CurrencyBuddy"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.atatusoft.CurrencyBuddy"
+        },
+        "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "com.atatusoft.CurrencyBuddy"
         }
     },
     "dependent_plugins": {}
