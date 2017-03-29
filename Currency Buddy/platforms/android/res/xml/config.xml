@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.atatusoft.CurrencyBuddy" version="1.2.2" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Currency Buddy</name>
+    <description>
+        A simple forex conversion app.
+    </description>
+    <author email="atatusoft@gmail.com" href="http://atatusoft.ml">
+        AtatuSoft Team
+    </author>
+    <content src="index.html" />
+    <icon density="mdpi" height="57" platform="ios" src="res/android/icon.png" width="57" />
+    <access origin="*" />
+    <allow-navigation href="https://openexchangerates.org/*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <access origin="http://openexchangerates.org/*" />
+    <access origin="https://openexchangerates.org/*" />
+    <preference name="loglevel" value="DEBUG" />
+</widget>

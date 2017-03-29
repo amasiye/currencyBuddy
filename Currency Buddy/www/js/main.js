@@ -22,12 +22,13 @@ $("#convert").on("click", function(e) {
 });
 
 function init()
-{
+{dataType
   ep = new Endpoint();
   $.get(
         ep.currencies,
         {app_id : APP_ID},
-        function(data) {
+        function(data, status) {
+          alert(status);
           for(country in data)
           {
             // Build "From" option list
@@ -58,7 +59,16 @@ function init()
               $("#ui-result").text(country + " ");
             }
           }
-        });
+        },'json')
+          .done(function() {
+            alert('Success');
+          })
+          .fail(function() {
+            alert('Error');
+          })
+          .always(function() {
+            alert('Complete');
+          });
 
   $('#to').on('change', function(e) {
     $('#ui-result').text($(this).find('option:selected').val());
