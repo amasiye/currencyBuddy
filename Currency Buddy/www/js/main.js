@@ -23,11 +23,10 @@ $("#convert").on("click", function(e) {
 function init()
 {
   ep = new Endpoint();
-  $.get( 
+  $.get(
         ep.currencies,
         {app_id : APP_ID},
         function(data, status) {
-          alert(status);
           for(country in data)
           {
             // Build "From" option list
@@ -59,13 +58,13 @@ function init()
             }
           }
         },'json')
-          .done(function() {
-            alert('Success');
+          .done(function(e) {
+            alert(JSON.stringify(e));
           })
-          .fail(function() {
-            alert('Error');
+          .fail(function(e) {
+            alert('Error - \n' + JSON.stringify(e));
           })
-          .always(function() {
+          .always(function(e) {
             alert('Complete');
           });
 
