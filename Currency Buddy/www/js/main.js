@@ -4,7 +4,11 @@ var APP_ID = 'bd929bae610d45e8a67ba30a71baa00b';
 var ep = new Endpoint();
 var currencies;
 
-$("document").ready(function() {
+$(document).ready(function() {
+  $(document).ajaxError(function( event, jqxhr, settings, thrownError) {
+    alert(thrownError);
+  });
+
   $.get(
         ep.currencies,
         {app_id : APP_ID},
