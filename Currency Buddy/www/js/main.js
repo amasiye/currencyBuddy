@@ -4,9 +4,10 @@ var APP_ID = 'bd929bae610d45e8a67ba30a71baa00b';
 var ep;
 var currencies;
 
-$(document).ready(function() {
+$(document).on('ready', function() {
+  alert('I am working.');
   // alert(ep.currencies);
-  init();
+  // init();
 });
 
 // Currency Swapping
