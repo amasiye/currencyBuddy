@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Currency Buddy</title>
+
+  <!--Adjusting the page on mobile screen  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="manifest" href="manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- JavaScript -->
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+  <div data-role="page" id="pageone" data-theme="b">
+    <!-- Header -->
+    <div data-role="header">
+      <a href="#sidenav" class="ui-btn ui-icon-bars ui-btn-icon-left ui-btn-notext">Menu</a>
+      <span class="nav-brand"><img src="android-icon-36x36.png" alt="Logo" height="24"></span><h1>&nbsp;Currency Buddy</h1>
+    </div>
+
+    <!-- Side Panel -->
+    <div data-role="panel" id="sidenav" data-display="reveal"  data-position-fixed="true">
+
+	  <div data-role="collapsible" data-icon="info">
+		<h4>Help</h4>
+		<h4>About</h4>
+		<p>Currency Buddy is a simple currency conversion tool.</p>
+
+		<h4>About the Developer</h4>
+		<p>Andrew Masiye is Computer Scientist with a passion for Game Development
+		   and Web Development.</p>
+		<p>Dev Blog: <a href="http://currencybuddy.ml/blog/">http://currencybuddy.ml/blog/</a></p>
+	  </div>
+
+	  <div data-role="collapsible">
+		<h4>Credits</h4>
+		<h4>APIs</h4>
+		<p>Exchange Rate Data provided by:
+		  <a href="https://openexchangerates.org/">Open Exchange Rates</a>
+		</p>
+		<h4>Developer</h4>
+		<p>Lead Developer: Andrew Masiye.</p>
+	  </div>
+
+	</div>
+
+    <!-- Main Content -->
+    <div data-role="main" class="ui-content">
+      <form method="GET">
+        <label for="amount">Amount:</label>
+        <input type="number" name="amount" id="amount" max="1000" min="0" value="1" placeholder="0" required="required">
+        <select name="from" id="from"></select>
+
+        <!-- Swap Button -->
+        <button id="swapValues" class="ui-btn ui-icon-recycle ui-btn-icon-right ui-shadow ui-corner-all">Swap</button>
+
+        <label for="to">To:</label>
+        <select name="to" id="to"></select>
+        <button id="convert" class="ui-btn">Convert</button>
+      </form>
+      <hr>
+      <div id="ui-result"></div>
+
+      <script type="text/javascript" src="js/main.js"></script>
+    </div>
+
+    <!-- Footer -->
+    <div data-role="footer">
+      <h1>Developed by <a href="http://atatusoft.ml">AtatuSoft</a></h1>
+      <h4 id="copy">&copy;{{@year}}</h4>
+    </div>
+	<script>
+		var d = new Date();
+		var y = d.getFullYear();
+		$(document).ready(function() {
+			$("#copy").html("&copy;&nbsp;" + y);
+		});
+
+	</script>
+  </div>
+
+</body>
+</html>

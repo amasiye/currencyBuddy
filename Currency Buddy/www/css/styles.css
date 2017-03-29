@@ -1,0 +1,27 @@
+/* */
+
+.ui-mobile .ui-page,
+.ui-panel-wrapper {
+  height: 100%;
+}
+
+.ui-mobile .ui-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+span.nav-brand {
+  position: absolute;
+  top: 8px;
+  left: calc(50% - 88px);
+}
+
+select {
+  background-color: #252525;
+  color: #fff;
+}
+
+#ui-result {
+  font-size: 30px;
+}
