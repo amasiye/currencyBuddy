@@ -5,26 +5,25 @@ var ep;
 var currencies;
 
 $(document).ready(function() {
-  ep = new Endpoint();
-  alert(ep.currencies);
+  // alert(ep.currencies);
   init();
 });
 
 // Currency Swapping
-document.getElementById("swapValues").addEventListener("click", function(event) {
-  event.preventDefault();
-
+$("#swapValues").on("click", function(e) {
+  e.preventDefault();
   swapValues();
 });
 
 // Conversion
-$("#convert").on("click", function(event) {
-  event.preventDefault();
+$("#convert").on("click", function(e) {
+  e.preventDefault();
   convert();
 });
 
 function init()
 {
+  ep = new Endpoint();
   $.get(
         ep.currencies,
         {app_id : APP_ID},

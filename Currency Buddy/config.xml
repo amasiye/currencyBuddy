@@ -1,5 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.atatusoft.CurrencyBuddy" version="1.2.2" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget
+    id="com.atatusoft.CurrencyBuddy"
+    version="1.2.2"
+    xmlns="http://www.w3.org/ns/widgets"
+    xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Currency Buddy</name>
     <description>
         A simple forex conversion app.
@@ -10,4 +14,9 @@
     <content src="index.html" />
     <icon src="res/ios/icon.png" platform="ios" width="57" height="57" density="mdpi" />
     <access origin="*" />
+    <access origin="https://openexchangerates.org" subdomains="true" />
+    <access origin="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" subdomains="true" />
+    <access origin="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" subdomains="true" />
+    <access origin="http://code.jquery.com/jquery-1.11.1.min.js" subdomains="true" />
+    <access origin="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js" subdomains="true" />
 </widget>
