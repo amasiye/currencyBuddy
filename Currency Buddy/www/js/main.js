@@ -23,53 +23,51 @@ $("#convert").on("click", function(e) {
 function init()
 {
   ep = new Endpoint();
-  alert(ep.currencies);
-  // extra stuff
-  // $.get(
-  //       ep.currencies,
-  //       {app_id : APP_ID},
-  //       function(data, status) {
-  //         alert(status);
-  //         for(country in data)
-  //         {
-  //           // Build "From" option list
-  //           if(country !== "CAD")
-  //           {
-  //             $("#from").append("<option value='" + country + "'>"
-  //                 + country + " - " + data[country] + "</option>");
-  //           }
-  //           else
-  //           {
-  //             $("#from").append("<option value='" + country + "'>"
-  //                 + country + " - " + data[country] + "</option>");
-  //             $('#from option[value=' + country + ']').prop('selected', true).change();
-  //           }
-  //
-  //           // Build "To" option list
-  //           if(country !== "ZMW")
-  //           {
-  //             $("#to").append("<option value='" + country + "'>"
-  //                 + country + " - " + data[country] + "</option>");
-  //           }
-  //           else
-  //           {
-  //             $("#to").append("<option value='" + country + "'>"
-  //                 + country + " - " + data[country] + "</option>");
-  //             $('#to option[value=' + country + ']').prop('selected', true).change();
-  //
-  //             $("#ui-result").text(country + " ");
-  //           }
-  //         }
-  //       },'json')
-  //         .done(function() {
-  //           alert('Success');
-  //         })
-  //         .fail(function() {
-  //           alert('Error');
-  //         })
-  //         .always(function() {
-  //           alert('Complete');
-  //         });
+  $.get( 
+        ep.currencies,
+        {app_id : APP_ID},
+        function(data, status) {
+          alert(status);
+          for(country in data)
+          {
+            // Build "From" option list
+            if(country !== "CAD")
+            {
+              $("#from").append("<option value='" + country + "'>"
+                  + country + " - " + data[country] + "</option>");
+            }
+            else
+            {
+              $("#from").append("<option value='" + country + "'>"
+                  + country + " - " + data[country] + "</option>");
+              $('#from option[value=' + country + ']').prop('selected', true).change();
+            }
+
+            // Build "To" option list
+            if(country !== "ZMW")
+            {
+              $("#to").append("<option value='" + country + "'>"
+                  + country + " - " + data[country] + "</option>");
+            }
+            else
+            {
+              $("#to").append("<option value='" + country + "'>"
+                  + country + " - " + data[country] + "</option>");
+              $('#to option[value=' + country + ']').prop('selected', true).change();
+
+              $("#ui-result").text(country + " ");
+            }
+          }
+        },'json')
+          .done(function() {
+            alert('Success');
+          })
+          .fail(function() {
+            alert('Error');
+          })
+          .always(function() {
+            alert('Complete');
+          });
 
   $('#to').on('change', function(e) {
     $('#ui-result').text($(this).find('option:selected').val());
