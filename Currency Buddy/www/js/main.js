@@ -5,11 +5,11 @@ var ep = new Endpoint();
 var currencies;
 
 $("document").ready(function() {
-  alert(APP_ID);
   $.get(
         ep.currencies,
         {app_id : APP_ID},
         function(data) {
+          alert(data);
 
           for(country in data)
           {
