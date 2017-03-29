@@ -28,13 +28,14 @@
   <meta name="theme-color" content="#ffffff">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
   <link rel="stylesheet" href="css/styles.css">
-
+<!-- 981x486 -->
   <!-- JavaScript -->
-  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/main.js"></script>
 </head>
 <body>
   <div data-role="page" id="pageone" data-theme="b">
@@ -55,14 +56,14 @@
 		<h4>About the Developer</h4>
 		<p>Andrew Masiye is Computer Scientist with a passion for Game Development
 		   and Web Development.</p>
-		<p>Dev Blog: <a href="http://currencybuddy.ml/blog/">http://currencybuddy.ml/blog/</a></p>
+		<p>Dev Blog: <a href="http://currencybuddy.ml/blog/" target="_blank">http://currencybuddy.ml/blog/</a></p>
 	  </div>
 
 	  <div data-role="collapsible">
 		<h4>Credits</h4>
 		<h4>APIs</h4>
 		<p>Exchange Rate Data provided by:
-		  <a href="https://openexchangerates.org/">Open Exchange Rates</a>
+		  <a href="https://openexchangerates.org/" target="_blank">Open Exchange Rates</a>
 		</p>
 		<h4>Developer</h4>
 		<p>Lead Developer: Andrew Masiye.</p>
@@ -87,19 +88,17 @@
       <hr>
       <div id="ui-result"></div>
 
-      <script type="text/javascript" src="js/main.js"></script>
     </div>
 
     <!-- Footer -->
     <div data-role="footer">
-      <h1>Developed by <a href="http://atatusoft.ml">AtatuSoft</a></h1>
-      <h4 id="copy">&copy;{{@year}}</h4>
+      <h3 id="copy">&copy;&nbsp;{{@year}}&nbsp;CurrencyBuddy</h3>
     </div>
 	<script>
 		var d = new Date();
 		var y = d.getFullYear();
 		$(document).ready(function() {
-			$("#copy").html("&copy;&nbsp;" + y);
+			$("#copy").html("&copy;&nbsp;" + y + "&nbsp;CurrencyBuddy");
 		});
 
 	</script>

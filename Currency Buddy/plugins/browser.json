@@ -11,9 +11,5 @@
             "PACKAGE_NAME": "com.atatusoft.CurrencyBuddy"
         }
     },
-    "dependent_plugins": {},
-    "modules": [],
-    "plugin_metadata": {
-        "cordova-plugin-whitelist": "1.3.2"
-    }
+    "dependent_plugins": {}
 }
