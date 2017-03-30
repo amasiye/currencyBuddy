@@ -15,6 +15,9 @@
         },
         "cordova-plugin-device-orientation": {
             "PACKAGE_NAME": "com.atatusoft.CurrencyBuddy"
+        },
+        "cordova-plugin-screen-orientation": {
+            "PACKAGE_NAME": "com.atatusoft.CurrencyBuddy"
         }
     },
     "dependent_plugins": {}

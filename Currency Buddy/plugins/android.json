@@ -9,7 +9,14 @@
     "installed_plugins": {
         "cordova-plugin-splashscreen": {
             "PACKAGE_NAME": "com.atatusoft.CurrencyBuddy"
+        },
+        "cordova-plugin-screen-orientation": {
+            "PACKAGE_NAME": "com.atatusoft.CurrencyBuddy"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "es6-promise-plugin": {
+            "PACKAGE_NAME": "com.atatusoft.CurrencyBuddy"
+        }
+    }
 }

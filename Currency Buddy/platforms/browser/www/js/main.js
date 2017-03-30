@@ -4,21 +4,22 @@ var APP_ID = 'bd929bae610d45e8a67ba30a71baa00b';
 var ep;
 var currencies;
 
-$(document).ready(function() {
-  // alert(ep.currencies);
+$(document).on('ready', function() {
   init();
-});
+    
+  // Currency Swapping
+  $("#swapValues").on("click", function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    swapValues();
+  });
 
-// Currency Swapping
-$("#swapValues").on("click", function(e) {
-  e.preventDefault();
-  swapValues();
-});
-
-// Conversion
-$("#convert").on("click", function(e) {
-  e.preventDefault();
-  convert();
+  // Conversion
+  $("#convert").on("click", function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    convert();
+  });
 });
 
 function init()
@@ -27,7 +28,7 @@ function init()
   $.get(
         ep.currencies,
         {app_id : APP_ID},
-        function(data) {
+        function(data, status) {
           for(country in data)
           {
             // Build "From" option list
@@ -58,7 +59,8 @@ function init()
               $("#ui-result").text(country + " ");
             }
           }
-        });
+        },
+        'json');
 
   $('#to').on('change', function(e) {
     $('#ui-result').text($(this).find('option:selected').val());

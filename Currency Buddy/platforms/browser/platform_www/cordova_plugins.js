@@ -43,6 +43,14 @@ module.exports = [
         "id": "cordova-plugin-device-orientation.CompassProxy",
         "pluginId": "cordova-plugin-device-orientation",
         "runs": true
+    },
+    {
+        "file": "plugins/cordova-plugin-screen-orientation/www/screenorientation.js",
+        "id": "cordova-plugin-screen-orientation.screenorientation",
+        "pluginId": "cordova-plugin-screen-orientation",
+        "clobbers": [
+            "cordova.plugins.screenorientation"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -50,7 +58,8 @@ module.exports.metadata =
 {
     "cordova-plugin-whitelist": "1.3.2",
     "cordova-plugin-splashscreen": "4.0.2",
-    "cordova-plugin-device-orientation": "1.0.6"
+    "cordova-plugin-device-orientation": "1.0.6",
+    "cordova-plugin-screen-orientation": "2.0.0"
 }
 // BOTTOM OF METADATA
 });

@@ -13,6 +13,9 @@
     </author>
     <content src="index.html" />
 
+    <!-- Screen orientation -->
+    <plugin name="cordova-plugin-screen-orientation" spec="1"/ >
+
     <!-- iOS Icons -->
     <icon src="apple-icon-72x72.png" platform="ios" width="57" height="57" density="mdpi" />
 
@@ -26,7 +29,6 @@
 
     <!-- Splash Screen -->
     <plugin name="cordova-plugin-splashscreen" spec="1" />
-
 
     <!-- Default Splash Screen -->
     <splash src="splash.png" />

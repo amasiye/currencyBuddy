@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.atatusoft.CurrencyBuddy" version="1.2.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.atatusoft.CurrencyBuddy" version="1.2.15" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Currency Buddy</name>
     <description>
         A simple forex conversion app.
@@ -8,6 +8,25 @@
         AtatuSoft Team
     </author>
     <content src="index.html" />
-    <icon density="mdpi" height="57" platform="ios" src="res/ios/icon.png" width="57" />
+    <icon density="mdpi" height="57" platform="ios" src="apple-icon-72x72.png" width="57" />
+    <icon platform="android" qualifier="ldpi" src="android-icon-36x36.png" />
+    <icon platform="android" qualifier="mdpi" src="android-icon-48x48.png" />
+    <icon platform="android" qualifier="hdpi" src="android-icon-72x72.png" />
+    <icon platform="android" qualifier="xhdpi" src="android-icon-96x96.png" />
+    <icon platform="android" qualifier="xxhdpi" src="android-icon-144x144.png" />
+    <icon platform="android" qualifier="fr-xxhdpi" src="android-icon-192x192.png" />
+    <splash src="splash.png" />
+    <splash platform="android" qualifier="ldpi" src="images/android/splash-ldpi.png" />
+    <splash platform="android" qualifier="mdpi" src="images/android/splash-mdpi.png" />
+    <splash platform="android" qualifier="hdpi" src="images/android/splash-hdpi.png" />
+    <splash platform="android" qualifier="xhdpi" src="images/android/splash-xhdpi.png" />
+    <splash platform="android" qualifier="xxhdpi" src="images/android/splash-xxhdpi.png" />
     <access origin="*" />
+    <allow-navigation href="https://openexchangerates.org/*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <access origin="http://openexchangerates.org/*" />
+    <access origin="https://openexchangerates.org/*" />
+    <preference name="SplashMaintainAspectRatio" value="true|false" />
+    <preference name="SplashShowOnlyFirstTime" value="true|false" />
 </widget>

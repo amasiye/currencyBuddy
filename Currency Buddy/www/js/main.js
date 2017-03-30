@@ -6,7 +6,7 @@ var currencies;
 
 $(document).on('ready', function() {
   init();
-    
+
   // Currency Swapping
   $("#swapValues").on("click", function(e) {
     e.preventDefault();
@@ -24,6 +24,8 @@ $(document).on('ready', function() {
 
 function init()
 {
+  window.screen.orientation.lock('portrait');
+  
   ep = new Endpoint();
   $.get(
         ep.currencies,
