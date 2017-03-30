@@ -12,7 +12,18 @@
         AtatuSoft Team
     </author>
     <content src="index.html" />
-    <icon src="android-icon-72x72.png" platform="ios" width="57" height="57" density="mdpi" />
+
+    <!-- iOS Icons -->
+    <icon src="apple-icon-72x72.png" platform="ios" width="57" height="57" density="mdpi" />
+
+    <!-- Android Icons -->
+    <icon src="android-icon-36x36.png" platform="android" qualifier="ldpi" />
+    <icon src="android-icon-48x48.png" platform="android" qualifier="mdpi" />
+    <icon src="android-icon-72x72.png" platform="android" qualifier="hdpi" />
+    <icon src="android-icon-96x96.png" platform="android" qualifier="xhdpi" />
+    <icon src="android-icon-144x144.png" platform="android" qualifier="xxhdpi" />
+    <icon src="android-icon-192x192.png" platform="android" qualifier="fr-xxhdpi" />
+
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <access origin="*" />
     <allow-navigation href="https://openexchangerates.org/*" />
