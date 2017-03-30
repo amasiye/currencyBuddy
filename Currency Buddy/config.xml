@@ -24,6 +24,9 @@
     <icon src="android-icon-144x144.png" platform="android" qualifier="xxhdpi" />
     <icon src="android-icon-192x192.png" platform="android" qualifier="fr-xxhdpi" />
 
+    <!-- Splash Screen -->
+    <splash src="splash.png" />
+
     <!-- iOS Splash -->
     <!-- <splash src="splash/ios/Default-568h@2x~iphone.png" platform="ios" width="320" height="480" /> -->
 
