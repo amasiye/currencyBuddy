@@ -24,6 +24,16 @@
     <icon src="android-icon-144x144.png" platform="android" qualifier="xxhdpi" />
     <icon src="android-icon-192x192.png" platform="android" qualifier="fr-xxhdpi" />
 
+    <!-- iOS Splash -->
+    <!-- <splash src="splash/ios/Default-568h@2x~iphone.png" platform="ios" width="320" height="480" /> -->
+
+    <!-- Android Splash -->
+    <splash src="images/android/splash-ldpi.png" platform="android" qualifier="ldpi" />
+    <splash src="images/android/splash-mdpi.png" platform="android" qualifier="mdpi" />
+    <splash src="images/android/splash-hdpi.png" platform="android" qualifier="hdpi" />
+    <splash src="images/android/splash-xhdpi.png" platform="android" qualifier="xhdpi" />
+    <splash src="images/android/splash-xxhdpi.png" platform="android" qualifier="xxhdpi" />
+
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <access origin="*" />
     <allow-navigation href="https://openexchangerates.org/*" />
