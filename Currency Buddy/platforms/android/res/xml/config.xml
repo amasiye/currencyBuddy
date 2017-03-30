@@ -16,4 +16,8 @@
     <access origin="http://openexchangerates.org/*" />
     <access origin="https://openexchangerates.org/*" />
     <preference name="loglevel" value="DEBUG" />
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
 </widget>

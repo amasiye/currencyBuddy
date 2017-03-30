@@ -25,6 +25,10 @@
     <icon src="android-icon-192x192.png" platform="android" qualifier="fr-xxhdpi" />
 
     <!-- Splash Screen -->
+    <plugin name="cordova-plugin-splashscreen" spec="1" />
+
+
+    <!-- Default Splash Screen -->
     <splash src="splash.png" />
 
     <!-- iOS Splash -->
@@ -37,6 +41,10 @@
     <splash src="images/android/splash-xhdpi.png" platform="android" qualifier="xhdpi" />
     <splash src="images/android/splash-xxhdpi.png" platform="android" qualifier="xxhdpi" />
 
+    <preference name="SplashMaintainAspectRatio" value="true|false" />
+    <preference name="SplashShowOnlyFirstTime" value="true|false" />
+
+    <!-- Whitelist -->
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <access origin="*" />
     <allow-navigation href="https://openexchangerates.org/*" />
