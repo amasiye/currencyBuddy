@@ -6,18 +6,20 @@ var currencies;
 
 $(document).on('ready', function() {
   init();
-});
+    
+  // Currency Swapping
+  $("#swapValues").on("click", function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    swapValues();
+  });
 
-// Currency Swapping
-$("#swapValues").on("click", function(e) {
-  e.preventDefault();
-  swapValues();
-});
-
-// Conversion
-$("#convert").on("click", function(e) {
-  e.preventDefault();
-  convert();
+  // Conversion
+  $("#convert").on("click", function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    convert();
+  });
 });
 
 function init()
@@ -57,16 +59,8 @@ function init()
               $("#ui-result").text(country + " ");
             }
           }
-        },'json')
-          .done(function(e) {
-            alert(JSON.stringify(e));
-          })
-          .fail(function(e) {
-            alert('Error - \n' + JSON.stringify(e));
-          })
-          .always(function(e) {
-            alert('Complete');
-          });
+        },
+        'json');
 
   $('#to').on('change', function(e) {
     $('#ui-result').text($(this).find('option:selected').val());
