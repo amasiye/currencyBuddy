@@ -4,9 +4,9 @@
 
 ### About Currency Buddy
 
-    Currency Buddy is the brain child of Andrew Masiye. Having grown tired
+    Currency Buddy is the brain child of Andrew Masiye. Having grown tired and
     frustrated with constantly having to open a browser every time he needed to
-    convert between.
+    convert between currencies.
 
 ### Who Are We
 
