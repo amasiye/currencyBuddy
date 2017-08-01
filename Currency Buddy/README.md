@@ -15,4 +15,4 @@ Canada. He is the founder and CEO of AtatuSoft Software Development company.
 For more info follow the links below:
 
     http://nothingbuthis.tk
-    http://atatusoft.ml
+    http://atatusoft.com
